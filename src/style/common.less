@@ -1,0 +1,48 @@
+@import './default.less';
+@import './loading.less';
+ul,li{
+
+    list-style: none;
+
+}
+
+.clearfix{
+    &::after{
+        display: block;
+        content: '';
+        clear: both;
+        visibility: hidden;
+    }
+}
+.container{
+    display: flex;
+    background-color: @colorF;
+    // 左侧导航栏
+    .nav-left{
+        width: 15%;
+        min-width: calc(100%-40px);
+        height: calc(100vh);
+        background-color: #001529;
+        color: #fff;
+    }
+    // 右侧
+    .main{
+        height: calc(100vh);
+        flex:1;
+        overflow: auto;
+    }
+    // 右侧内容部分
+    .content{
+        position: relative;
+        padding: 20px;
+    }
+}
+.content-wrap{
+    margin-top: -1px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    .ant-table-wrapper{
+        margin-left:-1px;
+        margin-right: -2px;
+    }
+}

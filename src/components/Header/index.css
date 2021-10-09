@@ -1,0 +1,57 @@
+/** 常用色值 **/
+/** 常用字体大小 **/
+.header {
+  background-color: #fff;
+}
+.header .header-top {
+  text-align: right;
+  line-height: 60px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header .header-top span {
+  margin-right: 20px;
+}
+.header .header-top .logo {
+  line-height: 60px;
+  text-align: left;
+}
+.header .header-top .logo img {
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.header .breadcrumb {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px orange solid ;
+  text-align: right;
+  font-size: 16px;
+}
+.header .breadcrumb .breadcrumb-title {
+  text-align: center;
+}
+.header .breadcrumb .breadcrumb-title:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: 83px;
+  border-top: 12px solid #fff;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
+.header .breadcrumb .weather {
+  margin: 0 20px;
+}
+.simple-page .header-top {
+  background: #1890ff;
+  color: #fff;
+}
+.simple-page .ant-form,
+.simple-page .ant-col-12,
+.simple-page .weather {
+  display: none;
+}
